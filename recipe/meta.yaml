@@ -1,6 +1,6 @@
 {% set name = "vaex-ml" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "ac3da27a272222ff39626104e845b35b0b55b486a8a83535c2f5712e513220cf" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "dc576841e9f0ec41fca1c8e66f981f43ee2194497d31d12456ea45d581752015" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - vaex-core >=1.0.0,<2
+    - vaex-core >=2.0.0,<3
     - numba
     - traitlets
     - jinja2
