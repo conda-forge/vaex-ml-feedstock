@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - vaex-core >=1.0.0,<2
+    - vaex-core >=2.0.0,<3
     - numba
     - traitlets
     - jinja2
