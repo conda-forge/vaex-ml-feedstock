@@ -1,6 +1,6 @@
 {% set name = "vaex-ml" %}
-{% set version = "0.15.0" %}
-{% set sha256 = "9d0571286937083efec7aa9816819adacd89e43ab0e75ec817d2530e6f74188c" %}
+{% set version = "0.16.0" %}
+{% set sha256 = "88b33b6e4425b3e37d9b45974f2ae67fc52c9cea772410cd388284583584d1c8" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - vaex-core >=4.0.0,<5
+    - vaex-core >=4.7.0,<5
     - numba
     - traitlets
     - jinja2
