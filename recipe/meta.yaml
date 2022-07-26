@@ -1,6 +1,6 @@
 {% set name = "vaex-ml" %}
-{% set version = "0.17.0" %}
-{% set sha256 = "16bc208eacc0834e4764d8a30cf635cce8c78ea495fbbfad9f11ea132795a9fd" %}
+{% set version = "0.18.0" %}
+{% set sha256 = "052cf87e45d789ae678d2ccc4021763814caa25584753acf72d7d4aa369b86fb" %}
 
 package:
   name: {{ name|lower }}
