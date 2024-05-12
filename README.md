@@ -1,11 +1,11 @@
-About vaex-ml
-=============
+About vaex-ml-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vaex-ml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.github.com/vaexio/vaex
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/vaex-ml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Machine learning support for vaex
 
@@ -147,5 +147,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@JovanVeljanoski](https://github.com/JovanVeljanoski/)
 * [@maartenbreddels](https://github.com/maartenbreddels/)
 
