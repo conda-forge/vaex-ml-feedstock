@@ -1,0 +1,55 @@
+context:
+  version: "0.19.1"
+
+package:
+  name: vaex-ml
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/v/vaex-ml/vaex_ml-${{ version }}.tar.gz
+  sha256: 8d72f35c4f4bd6c344b3e394a194c9c490cb927f8caf6f1fd628042b0b7730bf
+
+build:
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
+  number: 0
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - vaex-core >=4.8,<5
+    - numba
+    - traitlets
+    - jinja2
+    - scikit-learn
+    - xgboost
+    - lightgbm >=4.0,<5
+    - catboost >=1.2.8
+
+tests:
+  - python:
+      imports:
+        - vaex.ml
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  homepage: https://www.github.com/vaexio/vaex
+  summary: Machine learning support for vaex
+  description: |
+    Wrappers for various machine learning libraries to make them integrate into
+    vaex.
+  license: MIT
+  license_file: LICENSE.txt
+  repository: https://github.com/vaexio/vaex
+
+extra:
+  recipe-maintainers:
+    - maartenbreddels
+    - JovanVeljanoski
