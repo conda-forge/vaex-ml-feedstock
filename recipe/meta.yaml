@@ -1,13 +1,13 @@
 {% set name = "vaex-ml" %}
-{% set version = "0.18.1" %}
-{% set sha256 = "40f7efe41a60feb1cdc7e3529319b968b451710a9c1e5312096bb843dbe7a231" %}
+{% set version = "0.19.1" %}
+{% set sha256 = "8d72f35c4f4bd6c344b3e394a194c9c490cb927f8caf6f1fd628042b0b7730bf" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
